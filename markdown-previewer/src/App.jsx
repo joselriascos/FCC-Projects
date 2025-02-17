@@ -68,6 +68,17 @@ function App() {
           </ReactMarkdown>
         </div>
       </div>
+      <footer>
+        <p>
+          Coded by:{' '}
+          <a
+            target="_blank"
+            href="https://github.com/joselriascos/FCC-Projects/tree/main/markdown-previewer"
+          >
+            joselRiascos
+          </a>
+        </p>
+      </footer>
     </div>
   )
 }
