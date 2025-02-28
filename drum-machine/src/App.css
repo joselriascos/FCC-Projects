@@ -5,7 +5,7 @@
   --red: rgb(232, 82, 82);
 }
 
-.drum-machine {
+#drum-machine {
   border: 2px solid var(--dark-grey);
   border-radius: 12px;
   width: min(80vw, 400px);
@@ -40,7 +40,7 @@
       }
     }
 
-    & > .display {
+    & > #display {
       width: 80%;
       height: 2em;
       border-radius: 8px;

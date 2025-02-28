@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <div className="drum-machine">
+      <div id="drum-machine">
         <div className="controls">
           <div className="power">
             <div
@@ -27,7 +27,7 @@ function App() {
               <PowerIcon />
             </button>
           </div>
-          <p className="display">{isTurnedOn ? displayText : ''}</p>
+          <p id="display">{isTurnedOn ? displayText : ''}</p>
         </div>
         <input
           disabled={!isTurnedOn}

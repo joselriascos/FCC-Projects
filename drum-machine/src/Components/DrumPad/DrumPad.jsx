@@ -36,8 +36,9 @@ export const DrumPad = forwardRef(
       <button
         className={`drum-pad ${pressed ? 'pressed' : ''}`}
         onClick={playSound}
+        id={id}
       >
-        <audio ref={audioRef} src={sound} hidden id={id} />
+        <audio className="clip" ref={audioRef} src={sound} hidden id={id} />
         {id}
       </button>
     )
