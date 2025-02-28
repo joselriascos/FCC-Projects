@@ -1,0 +1,84 @@
+:root {
+  --dark-grey: #8d8d8d;
+  --light-grey: #b3b3b3;
+  --white: #dedede;
+  --red: rgb(232, 82, 82);
+}
+
+.drum-machine {
+  border: 2px solid var(--dark-grey);
+  border-radius: 12px;
+  width: min(80vw, 400px);
+  padding: 20px;
+
+  & > .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    & > .power {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      & > button {
+        width: 30px;
+        height: 30px;
+        background-color: var(--red);
+        cursor: pointer;
+        border-radius: 50%;
+      }
+
+      & > div {
+        background-color: transparent;
+        border: 1px solid var(--white);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+    }
+
+    & > .display {
+      width: 80%;
+      height: 2em;
+      border-radius: 8px;
+      text-align: right;
+      font-size: 1.3em;
+      color: var(--white);
+      font-weight: 600;
+      padding: 5px;
+      background-color: var(--dark-grey);
+    }
+  }
+
+  & > input {
+    width: 100%;
+    margin-bottom: 30px;
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  & > .drum-pads-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 10px;
+
+  & > p > a {
+    color: inherit;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
