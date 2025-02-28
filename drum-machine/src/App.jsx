@@ -59,7 +59,13 @@ function App() {
       </div>
       <div className="footer">
         <p>
-          Coded by: <a target='_blank' href="#">joselRiascos</a>
+          Coded by:{' '}
+          <a
+            target="_blank"
+            href="https://github.com/joselriascos/FCC-Projects/tree/main/drum-machine"
+          >
+            joselRiascos
+          </a>
         </p>
       </div>
     </>
