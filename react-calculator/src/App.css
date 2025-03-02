@@ -10,17 +10,17 @@
 
     & > .expression {
       font-size: 0.9em;
+      height: 2em;
       color: var(--orange);
       opacity: 0.8;
-      font-weight: 400;
+      overflow-x: auto;
     }
 
-    & > .display {
+    & > #display {
       font-size: 1.5em;
       font-weight: 400;
       color: var(--white);
       padding-top: 20px;
-      margin-bottom: 10px;
     }
   }
 

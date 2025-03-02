@@ -1,15 +1,17 @@
 import './App.css'
-import { evaluate } from 'mathjs'
 import { buttons } from './utils/consts'
 import { Button } from './Components/Button'
+import { useAppContext } from './hooks/useAppContext'
 
 function App() {
+  const { displayText, expression } = useAppContext()
+
   return (
     <>
       <div className="calculator">
         <div className="display-container">
-          <p className="expression">Expresión acumulada</p>
-          <p className="display">RESULTADO</p>
+          <p className="expression">{expression}</p>
+          <p id="display">{displayText}</p>
         </div>
         <div className="buttons-container">
           {buttons.map((button) => {
@@ -25,9 +27,8 @@ function App() {
                 rowspan={rowspan}
                 key={id}
                 className={className}
-              >
-                {text}
-              </Button>
+                text={text}
+              />
             )
           })}
         </div>
