@@ -1,5 +1,5 @@
 import { FaPause, FaPlay, FaUndo } from 'react-icons/fa'
-import { formatTime } from './functions'
+import { formatTime } from '../utils/functions'
 
 const Display = ({ displayState, reset, startStop }) => {
   return (
